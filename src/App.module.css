@@ -1,0 +1,39 @@
+
+.button {
+    padding: 0.5em;
+    font-size: 1.1em;
+    margin: 3em;
+    border-radius: 2em;
+    outline: none;
+    border: solid 1px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.getReward {
+    color: green;
+    font-size: 1.5em;
+}
+
+.reward {
+    animation-duration: 0.5s;
+    animation-name: scale;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.5);
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
